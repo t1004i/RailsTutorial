@@ -1,0 +1,479 @@
+@charset "utf-8";
+
+/* ========================================
+    リセットcss
+========================================= */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-style:normal;
+	font-weight: normal;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html{overflow-y: scroll;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: ''; content: none;}
+input, textarea,{margin: 0; padding: 0;}
+ol, ul{list-style:none;}
+table{border-collapse: collapse; border-spacing:0;}
+caption, th{text-align: left;}
+a:focus {outline:none;}
+
+
+/* micro clearfix */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {clear: both;}
+.cf {*zoom: 1;}
+
+/* ========================================
+    レイアウト用
+========================================= */
+body {
+  background: url('../images/bg.png');
+  border-top: 5px solid #345C39;
+  font-family: "メイリオ", Meiryo;
+}
+
+div#wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.box-shadow {
+  box-shadow: 0 2px 7px rgba(83, 78, 61, 0.3);
+}
+/* ========================================
+    header用
+========================================= */
+header {
+  width: 960px;
+  height: 49px;
+  padding: 20px 0;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+header h1{
+  font-size: 12px;
+  color: #555555;
+  background: url('../images/logo.png') no-repeat;
+  padding-left: 51px;
+  line-height: 1;
+  height: 49px;
+  float: left;
+}
+
+header h1 span {
+  font-size: 33px;
+  color: #734339;
+  font-weight: bold;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+header nav {
+  float: right;
+  margin-top: 36px;
+}
+
+header nav ul li {
+  float: left;
+  margin-left: 29px;
+}
+
+
+header nav ul li:hover {
+  background: url('../images/navbar.png') no-repeat center bottom;
+  height: 36px;
+  display: inline-block;
+}
+
+header nav ul li a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #734339;
+  text-decoration: none;
+  display: inline-block;
+  height: 26px;
+}
+header nav ul li:hover a {
+  color: #345C39;
+  border-bottom: 4px solid #345C39;
+  
+}
+
+div.clear{
+  clear:both;
+}
+header p#nav_tel img{
+  width:100%;
+}
+header p#nav_tel {
+  position: absolute;
+  top:0;
+  right:0;
+}
+
+
+/* ========================================
+    メイン用
+========================================= */
+div#mainimage {
+  width: 950px;
+  height: 280px;
+  margin: 20px 0 20px 0;
+  border: 5px solid #fff;
+}
+
+
+/* ========================================
+    レフト用
+========================================= */
+div#left {
+  width: 555px;
+  height: auto;
+  background-color: #fff;
+  float: left;
+  margin: 0 20px 0 0;
+  padding: 10px;
+}
+.iframe-wrap{
+  position: relative;
+  width: 100%;
+  padding-top: 120%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.iframe-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+div#left h2,
+div#left h3 {
+  font-size: 17px;
+  font-weight: bold;
+  color:#734339;
+  border-left: 5px solid #da3009;
+  padding-left: 10px;
+}
+
+div#left ul {
+  overflow: scroll;
+  width: 555px;
+  height: 145px;
+}
+
+div#left ul li span {
+  display:inline-block;
+  width: 80px;
+  font-size: 12px;
+  font-weight: normal;
+  color: #b5b3b3;
+  padding-right: 5px;
+}
+
+div#left ul li a{
+  text-decoration: none;
+}
+
+div#left ul li{
+  font-size: 13px;
+  font-weight: normal;
+  color: #927e7a;
+  margin-right: 15px;
+  border-bottom: 1px dotted #202020;
+  line-height: 32px;
+
+}
+
+
+
+/* ========================================
+    ライト用
+========================================= */
+div#right {
+  width: 365px;
+  height: 198px;
+  float: left;
+}
+
+div#right ul li {
+  line-height: 60px;
+  margin-bottom: 20px;
+}
+
+div#right ul li a {
+  weight: 225px;
+  height: 60px;
+  display: block;
+  font-size: 17px;
+  font-weight: bold;
+  color: #734339;
+  text-decoration: none;
+  padding-left: 140px;
+}
+
+div#right ul li a#contact {
+  background: url('../images/contact.jpg');
+  
+}
+
+div#right ul li a#blog {
+  background: url('../images/blog.jpg');
+}
+
+
+div.clear {
+  clear: both;
+}
+
+/* ========================================
+    フッター用
+========================================= */
+footer{
+  width: 100%;
+  height: 58px;
+  background-color: #345c39;
+  margin: 20px 0 0 0;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  line-height: 58px;
+}
+/* ========================================
+    メニュー一覧用
+========================================= */
+h2#heading {
+  background: url('../images/title.jpg');
+  width: 925px;
+  height: 70px;
+  border: 5px solid #fff;
+  margin-bottom: 20px;
+  font-size: 27px;
+  font-weight: bold;
+  color: #2f5734;
+  line-height: 70px;
+  padding-left: 23px;
+  
+}
+
+div#left dl {
+  margin-top: 11px;
+
+}
+
+div#left dl dt {
+  font-size: 15px;
+  font-weight: normal;
+  color: #734339;
+
+}
+
+div#left dl dd {
+  font-size: 13px;
+  font-weight: normal;
+  color: #927e7a;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  float: left;
+  display: inline-block;
+  width:97%;
+  margin-right:10px;
+}
+
+div#left dl dd span {
+  float:right;
+  text-align: right;
+}
+div#left dl dd p {
+  border-bottom: 1px dotted #b5b3b3;
+}
+
+div#left dl dd:last-child {
+  margin-bottom: 0;
+}
+/* ========================================
+    contactぺージ用
+========================================= */
+
+p#contact_text{
+  font-size: 12px;
+  line-height: 18px;
+  color:#927E7A;
+  background-color: #FFEFEA;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+td.form_title {
+  width:131px;
+  height: 32px;
+  font-size: 15px;
+  color:#734339;
+  vertical-align: top;
+}
+
+td.form_title label {
+  font-weight: bold;
+}
+
+span.his {
+  font-size: 10px;
+  font-weight: bold;
+  color: red
+}
+
+
+td.form_contents {
+  font-size: 13px;
+  color: #A6A6A6;
+}
+td.form_time {
+  ime-mode: disabled;
+}
+
+td.form_contents input#form_name,
+td.form_contents input#form_tel{
+  width: 421px;
+  height: 22px;
+}
+td.form_contents input.form_time {
+  width: 47px;
+  height: 22px;
+  margin-right: 5px;
+  display: inline-block;
+}
+td.form_contents textarea {
+  width: 421px;
+  height: 83px;
+  border: 1px solid #A6A6A6;
+}
+p#submit {
+  text-align: right;
+  
+}
+p#submit input,
+p#submit button.button1 {
+  background-color: #325a37;
+  border: none;
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+  width: 136px;
+  height: 40px;
+}
+p#submit input:hover,
+p button.button1:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* ========================================
+    スマホぺージ用
+========================================= */
+@media only screen and (max-width:812px){
+  html,
+  body,
+  div#wrapper,
+  div#wrapper header,
+  div#mainimage,
+  div#mainimage img
+  {
+    width:100%;
+    margin:0;
+  }
+  header nav {
+    margin:10px 0;
+    text-align: center;
+  }
+  header nav ul li a{
+    font-size:15px;
+  }
+  div#mainimage,
+  div#mainimage img {
+    height: 100%;
+    border:none;
+  }
+  div#left,
+  div#left ul {
+    width:95%;
+  }
+  div#left ul{
+    padding:0;
+    margin:0;
+  }
+  div#left ul li{
+    font-size: 10px;
+  }
+  div#left ul li span {
+    padding:0px;
+  }
+  div#right {
+    padding-top: 30px;
+    width: 100%;
+    text-align: center;
+  }
+  div#right ul li a{
+    
+  }
+  div#right ul li a{
+    font-size:10px;
+    padding-left:30px;
+    
+  }
+  div#right ul li a#contact,
+  div#right ul li a#blog {
+    font-size:10px;
+    background-position:center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    margin: auto;
+    
+  }
+
+  h2#heading {
+  width: 99%;
+  border: none;
+  margin-top:20px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  padding-left: 5px;
+  padding-right:0px;
+  
+}
+
+
+
+
+  .box-shadow {
+    box-shadow: none;
+  }
+  .mediafloat {
+    clear: both;
+  }
+}
