@@ -1,0 +1,13 @@
+<h1>TODO</h1>
+<ul>
+  <% @tasks.each do |task| %>
+  <li>
+    <%= check_box_tag '','' %>
+    <%= task.title %>
+    <%= link_to '[編集]', edit_task_path(task.id) %>
+    <%= link_to '[削除]', task_path(task.id),method: :delete,
+    data:{ confirm: '削除してもよろしいですか。'} %>
+  </li>
+  <% end %>
+</ul>
+<%= link_to '新規追加', new_task_path %>
