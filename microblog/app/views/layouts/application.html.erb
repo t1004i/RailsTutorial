@@ -10,6 +10,15 @@
   </head>
 
   <body>
+    <%= render 'posts/header' %>
+    <div class="container mb-5">
+    <div class="jumbotron jumbotron-fluid mb-2 bgimg">
+      <div class="container">
+      <h1 class="display-3 text-warning">ひとりごとapp</h1>
+      <p class="lead">RubyonRails練習用</p>
+      </div>
+    </div>
     <%= yield %>
+    </div>
   </body>
 </html>

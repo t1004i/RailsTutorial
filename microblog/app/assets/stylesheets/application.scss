@@ -12,3 +12,14 @@
  *
  */
 @import "bootstrap";
+@import "posts";
+body {
+    margin-top: 70px;
+}
+.container {
+    margin-top: 50px;
+}
+.bgimg {
+    background-image:url("bg.jpg");
+    background-size: cover;
+}
