@@ -1,0 +1,6 @@
+<%= form_for @post do |f| %>
+    <%= f.label :body,'本文' %>
+    <%= f.text_area :body ,class: "form-control" %>
+    
+    <%= f.submit class: "btn btn-primary mt-3"%>
+<% end %>
